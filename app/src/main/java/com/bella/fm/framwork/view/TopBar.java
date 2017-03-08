@@ -1,8 +1,7 @@
-package com.bella.fm.framework.view;
+package com.bella.fm.framwork.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v4.content.res.TypedArrayUtils;
 import android.util.AttributeSet;
 import android.widget.Button;
 import android.widget.RelativeLayout;

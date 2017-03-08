@@ -27,4 +27,21 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     compile 'com.android.support:support-v4:25.1.1'
     testCompile 'junit:junit:4.12'
+
+    //屏幕适配
+    compile 'com.zhy:autolayout:1.4.3'
+    //注解
+    compile 'com.jakewharton:butterknife:7.0.0'
+    //fresco 图片加载
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    //okhttp 网络请求框架
+    compile 'com.zhy:okhttputils:2.6.2'
+    //轻量级相机相册
+    compile 'com.jph.takephoto:takephoto_library:4.0.2'
+    //下拉刷新
+    compile 'com.chanven.lib:cptr:1.0.0'
+    //Picasso 图片加载
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+    //下拉刷新
+    //    compile 'cn.bingoogolapple:bga-refreshlayout:latestVersion@aar'
 }

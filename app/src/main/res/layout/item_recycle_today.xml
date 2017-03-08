@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="236px"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="30px"
+    android:paddingRight="18px"
+    >
+
+        <RelativeLayout
+            android:layout_width="218px"
+            android:layout_height="218px"
+            >
+
+            <ImageView
+                android:id="@+id/item_dis_today_img"
+                android:layout_width="218px"
+                android:layout_height="218px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/def_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:background="@mipmap/jianbian_bg"
+                android:layout_alignParentBottom="true"
+                >
+
+                <TextView
+                    android:id="@+id/item_dis_today_tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="十点读书"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10px"
+                    />
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/play_btn"
+                    />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_dis_today_tv_2"
+            android:layout_width="218px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="穷到极致是一种怎样体验"
+            android:textSize="12sp"
+            android:textColor="@color/c_000000"
+            />
+    </LinearLayout>

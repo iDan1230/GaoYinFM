@@ -6,11 +6,11 @@
     android:background="@color/colorPrimaryDark"
     tools:context="com.bella.fm.fm.fragment.MineFragment">
 
-    <com.bella.fm.framework.view.TopBar
+    <com.bella.fm.framwork.view.TopBar
         android:layout_width="100dp"
         android:layout_height="50dp"
         app:leftTextInfo="sfafdfadffafd"
         android:gravity="center"
-        ></com.bella.fm.framework.view.TopBar>
+        ></com.bella.fm.framwork.view.TopBar>
 
 </FrameLayout>

@@ -1,15 +1,339 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorAccent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical"
     tools:context="com.bella.fm.fm.fragment.DiscoverFragment">
+    <!--View的高度随手机版本变化-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/c_8e68a5" />
 
-        <com.bella.fm.framework.view.TopBar
-            app:leftTextInfo="sdfadfasfdfadf"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/c_8e68a5">
+
+        <LinearLayout
+            android:layout_width="626px"
+            android:layout_height="58px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/search_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:background="@null"
+                android:hint="十点读书"
+                android:textColorHint="@color/c_ffffff"
+                android:textSize="24px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/top_play"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="推荐"
+                android:textColor="@color/c_8e68a5"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="125px"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/c_8e68a5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="分类"
+                android:textColor="@color/c_999999"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="125px"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/c_8e68a5"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="电台"
+                android:textColor="@color/c_999999"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="125px"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/c_8e68a5"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="主播"
+                android:textColor="@color/c_999999"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="125px"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/c_8e68a5"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px">
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/banner_1" />
 
-        </com.bella.fm.framework.view.TopBar>
-</FrameLayout>
+        <TextView
+            android:layout_width="74px"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="35px"
+            android:background="@drawable/banner_label"
+            android:gravity="center"
+            android:text="小说"
+            android:textColor="@color/c_4c4c4c"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/caricle"
+            android:padding="10px"
+            android:src="@mipmap/right_boult_gray" />
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/caricle"
+            android:padding="10px"
+            android:src="@mipmap/right_boult_gray" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dis_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="194px"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/c_f5f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:paddingLeft="30px">
+
+            <ImageView
+                android:layout_width="6px"
+                android:layout_height="28px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/left_title_fdc94d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18px"
+                android:text="今日必听"
+                android:textColor="@color/c_4c4c4c"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/jr_biting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/right_boult_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@id/jr_biting"
+                android:text="更多"
+                android:textColor="@color/c_999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dis_recycler_today"
+                android:layout_width="match_parent"
+                android:layout_height="394px"
+                android:layout_marginLeft="30px"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+           <!-- <LinearLayout
+                android:layout_width="218px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                >
+
+                <RelativeLayout
+                    android:layout_width="218px"
+                    android:layout_height="218px"
+                   >
+
+                    <ImageView
+                        android:layout_width="218px"
+                        android:layout_height="218px"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/def_bg" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:background="@mipmap/jianbian_bg"
+                        android:layout_alignParentBottom="true"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="十点读书"
+                            android:textColor="@color/c_ffffff"
+                            android:textSize="12sp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10px"
+                            />
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10px"
+                            android:src="@mipmap/play_btn"
+                            />
+                    </RelativeLayout>
+                    
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="218px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:text="穷到极致是一种怎样体验"
+                    android:textSize="12sp"
+                    android:textColor="@color/c_000000"
+                    />
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/c_f5f5f5" />
+
+
+</LinearLayout>
