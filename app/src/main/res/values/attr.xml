@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="TopBar">
+        <!-- format="reference" 资源文件中的-->
+        <attr name="leftBackColor" format="reference"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="leftTextInfo" format="string"/>
+
+        <!-- format="reference" 资源文件中的-->
+        <attr name="rightBackColor" format="reference"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="rightTextInfo" format="string"/>
+
+        <!-- format="reference" 资源文件中的-->
+        <attr name="titleBackColor" format="reference"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="titleTextInfo" format="string"/>
+
+    </declare-styleable>
+</resources>
