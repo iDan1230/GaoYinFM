@@ -1,20 +1,20 @@
 package com.bella.fm.fm.fragment;
 
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ListView;
 
 import com.bella.fm.R;
 import com.bella.fm.fm.adapter.DisAdapterToDay;
-import com.bella.fm.fm.adapter.DisRecycleAdapter;
+import com.bella.fm.fm.adapter.DisListViewAdapter;
 import com.bella.fm.fm.adapter.DisRecycleAdapter;
 import com.bella.fm.fm.bean.DisTodayBean;
 import com.bella.fm.fm.bean.SelectorDisBean;
 import com.bella.fm.framwork.base.BaseFragment;
+import com.bella.fm.framwork.utils.ListViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +32,12 @@ public class DiscoverFragment extends BaseFragment {
     private List<DisTodayBean> disTodayBeens;
     private DisAdapterToDay disAdapterToDay;
     private RecyclerView today_recycler;
+
+    //今日必听 猜你喜欢  精彩推荐
+    private ListView dis_listView;
+
+    private DisListViewAdapter disListViewAdapter;
+
 
     @Override
     protected int getResource() {
@@ -52,7 +58,21 @@ public class DiscoverFragment extends BaseFragment {
     @Override
     protected void initData() {
         disAdapter_1();
-        disToDay();
+//        disToDay();
+        disButtom();
+    }
+
+    private void disButtom() {
+        List<String> list = new ArrayList<>();
+        list.add("111");
+        list.add("111");
+        list.add("111");
+        dis_listView = findViewByIdNoCast(R.id.dis_listview);
+        disListViewAdapter = new DisListViewAdapter(getContext());
+        disListViewAdapter.settList(list);
+        dis_listView.setAdapter(disListViewAdapter);
+        ListViewUtils.setListViewHeightBasedOnChildren(dis_listView);
+
     }
 
     //类型选项

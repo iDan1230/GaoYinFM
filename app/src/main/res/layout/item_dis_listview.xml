@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:paddingLeft="30px">
+
+        <ImageView
+            android:layout_width="6px"
+            android:layout_height="28px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_title_fdc94d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18px"
+            android:text="今日必听"
+            android:textColor="@color/c_4c4c4c"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/jr_biting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/right_boult_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@id/jr_biting"
+            android:text="更多"
+            android:textColor="@color/c_999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="218px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="218px"
+                android:layout_height="218px"
+                >
+
+                <ImageView
+                    android:id="@+id/item_dis_today_img1"
+                    android:layout_width="218px"
+                    android:layout_height="218px"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/def_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:background="@mipmap/jianbian_bg"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/item_dis_today_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="十点读书"
+                        android:textColor="@color/c_ffffff"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10px"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10px"
+                        android:src="@mipmap/play_btn"
+                        />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_dis_today_tv_b1"
+                android:layout_width="218px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="穷到极致是一种怎样体验"
+                android:textSize="12sp"
+                android:textColor="@color/c_000000"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="218px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px"
+            >
+
+            <RelativeLayout
+                android:layout_width="218px"
+                android:layout_height="218px"
+                >
+
+                <ImageView
+                    android:id="@+id/item_dis_today_img2"
+                    android:layout_width="218px"
+                    android:layout_height="218px"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/def_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:background="@mipmap/jianbian_bg"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/item_dis_today_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="十点读书"
+                        android:textColor="@color/c_ffffff"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10px"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10px"
+                        android:src="@mipmap/play_btn"
+                        />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_dis_today_tv_b2"
+                android:layout_width="218px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="穷到极致是一种怎样体验"
+                android:textSize="12sp"
+                android:textColor="@color/c_000000"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="218px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px"
+            >
+
+            <RelativeLayout
+                android:layout_width="218px"
+                android:layout_height="218px"
+                >
+
+                <ImageView
+                    android:id="@+id/item_dis_today_img3"
+                    android:layout_width="218px"
+                    android:layout_height="218px"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/def_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:background="@mipmap/jianbian_bg"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/item_dis_today_tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="十点读书"
+                        android:textColor="@color/c_ffffff"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10px"
+                        />
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10px"
+                        android:src="@mipmap/play_btn"
+                        />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_dis_today_tv_b3"
+                android:layout_width="218px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="穷到极致是一种怎样体验"
+                android:textSize="12sp"
+                android:textColor="@color/c_000000"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/c_f5f5f5"
+        android:layout_marginTop="20px"
+        />
+
+</LinearLayout>
